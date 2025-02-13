@@ -83,6 +83,31 @@ nav div a {
   gap: 10px;
 }
 
+.input-group {
+  display: flex;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #3d8d7a;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-group button {
+  padding: 10px 15px;
+  background-color: #3d8d7a;
+  color: #fbffe4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 input {
   padding: 10px;
   width: 300px;
@@ -184,5 +209,26 @@ p {
 
   .nav-links.active {
     display: flex;
+  }
+
+  .input-group {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+  .input-group button {
+    width: 100%;
+  }
+
+  .result {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
