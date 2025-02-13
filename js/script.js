@@ -34,3 +34,12 @@ conversion = () => {
   document.getElementById("reamur").innerHTML = reamur;
   document.getElementById("kelvin").innerHTML = kelvin;
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+  });
+});

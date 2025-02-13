@@ -19,6 +19,22 @@ nav {
   align-items: center;
   background-color: #fbffe4;
   padding: 10px 80px;
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #3d8d7a;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
 }
 
 nav ul {
@@ -133,4 +149,40 @@ p {
   color: #fbffe4;
   padding: 20px;
   border-radius: 5px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Susunan Flexbox */
+  .github {
+    order: 1; /* Memindahkan "Aditya Wijaya" ke kiri */
+  }
+
+  .hamburger {
+    display: block;
+    order: 2; /* Memindahkan hamburger ke kanan */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #fbffe4;
+    text-align: center;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 }
