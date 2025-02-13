@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+    />
+    <title>Konversi Suhu</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav>
+      <div class="logo">
+        <img src="./assets/logo.png" width="80" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="github">
+        <a
+          href="https://github.com/revou-fundamental-course/03-feb-25-AdityaWjy"
+          >Aditya Wijaya</a
+        >
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <div class="container">
+      <!-- hero start -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Temperature conversion</h1>
+          <p>
+            Temperature conversion from Celsius to Fahrenheit, Reamur, and
+            Kelvin
+          </p>
+          <div class="input-group">
+            <input
+              type="text"
+              id="input"
+              placeholder="Masukkan suhu dalam Celcius"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+            />
+            <button class="button" onclick="conversion()">Conversion</button>
+          </div>
+        </div>
+        <div class="result">
+          <p class="fahrenheit">
+            Fahrenheit: <span id="fahrenheit"></span>&deg;
+          </p>
+          <p class="reamur">reamur: <span id="reamur"></span>&deg;</p>
+          <p class="kelvin">kelvin: <span id="kelvin"></span>&deg;</p>
+        </div>
+      </section>
+      <!-- hero end -->
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", serif;
+  background-color: #fbffe4;
+}
+
+/* navbar style*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fbffe4;
+  padding: 10px 80px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #3d8d7a;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #27445d;
+}
+
+nav div a {
+  font-size: 1rem;
+  color: #3d8d7a;
+  font-weight: 500;
+}
+
+/* hero style */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 80px;
+  margin-top: 50px;
+}
+
+.hero {
+  padding: 40px 40px;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #3d8d7a;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #3d8d7a;
+}
+
+input::after {
+  content: "Search";
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3d8d7a;
+  color: #fbffe4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #3d8d7a;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  color: #27445d;
+  font-weight: 500;
+}
+
+/* Result style */
+
+.result {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.fahrenheit {
+  background-color: #3d8d7a;
+  color: #fbffe4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.reamur {
+  background-color: #3d8d7a;
+  color: #fbffe4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.kelvin {
+  background-color: #3d8d7a;
+  color: #fbffe4;
+  padding: 20px;
+  border-radius: 5px;
+}
